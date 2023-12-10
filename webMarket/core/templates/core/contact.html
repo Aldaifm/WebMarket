@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+    <h1>{{ titulo }}</h1>
+    
+    {% if video_url %}
+        <video width="560" height="315" controls autoplay>
+            <source src="{{ video_url }}" type="video/mp4">
+            Tu navegador no soporta el tag de video.
+        </video>
+    {% endif %}
+{% endblock %}
